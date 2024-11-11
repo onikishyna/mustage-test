@@ -1,0 +1,160 @@
+.third-page {
+  color: $white-color;
+  background-color: $black-color;
+
+  @media (min-width: $more-than-mobile) {
+    padding-top: 100px;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    column-gap: 30px;
+    row-gap: 76px;
+    align-items: center;
+
+    @media (min-width: $more-than-mobile) {
+      margin: 0 89px;
+    }
+
+    @media (min-width: $desctop-screen) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 100px 120px 0 120px;
+      align-items: stretch;
+      justify-items: stretch;
+    }
+
+    @media (min-width: $big-screen) {
+      margin: 100px 160px 0 160px;
+    }
+  }
+
+  &__card {
+    border-radius: 15px;
+    border: 1px solid $secondary-violet;
+    position: relative;
+
+    &--circle {
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 10px;
+      width: 52.88px;
+      height: 50px;
+      background-color: $secondary-violet;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  &__card-title {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 21px;
+    margin-bottom: 15px;
+    display: block;
+    font-family: $font-primary;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.76px;
+    text-align: left;
+    z-index: 2;
+
+    @media (min-width: $more-than-mobile) {
+      font-size: 30px;
+    }
+  }
+
+  &__card-text {
+    display: block;
+    font-family: $font-secondary;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    margin-left: 21px;
+    margin-bottom: 30px;
+    margin-right: 4px;
+
+    @media (min-width: $more-than-mobile) {
+      font-size: 22px;
+    }
+  }
+
+  .base-button,
+  .third-page__base-button {
+    cursor: pointer;
+    background-color: $white-color;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-family: $font-primary;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    width: 318px;
+    height: 78px;
+    margin: 0 78px 51px 78px;
+    align-items: center;
+    @media (min-width: $desctop-screen) {
+      grid-column: 1 / -1;
+      margin: 50px auto;
+      width: 318px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 50px;
+      border: 2px solid $secondary-violet;
+      background-color: transparent;
+      transform: rotate(6deg);
+      pointer-events: none;
+    }
+  }
+
+  &__button-text {
+    display: block;
+    padding: 18px 10px 16px 10px;
+
+    @media (min-width: $more-than-mobile) {
+      display: block;
+    }
+  }
+}
+
+.card-dark {
+  background-color: $black-color;
+}
+
+.card-white {
+  background-color: $white-color;
+}
+
+.title-dark .text-dark {
+  color: $white-color;
+}
+
+.title-white,
+.text-white {
+  color: $black-color;
+}
+
+.third-page__table .third-page__card:first-child {
+  margin-top: 100px;
+
+  @media (min-width: $more-than-mobile) {
+    margin-top: 0;
+  }
+}
+

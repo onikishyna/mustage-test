@@ -1,0 +1,16 @@
+@import './mixins';
+
+@import './blocks/first-page';
+@import './blocks/aside';
+@import './blocks/second-page';
+@import './blocks/third-[age';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+

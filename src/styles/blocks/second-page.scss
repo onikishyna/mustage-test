@@ -1,0 +1,24 @@
+.second-page {
+  &__text {
+    display: block;
+    margin: 100px 16px 100px 19px;
+    font-family: $font-primary;
+    font-family: Jura;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.86px;
+    text-align: center;
+    color: $black-color;
+
+    @media (min-width: $more-than-mobile) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $desctop-screen) {
+        font-size: 50px;
+      }
+    @media (min-width: $big-screen) {
+        font-size: 64px;
+      }
+  }
+}
